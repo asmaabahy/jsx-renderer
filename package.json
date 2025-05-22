@@ -1,0 +1,18 @@
+{
+  "name": "jsx-renderer",
+  "version": "1.0.0",
+  "main": "Babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel script.js --out-dir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-react": "^7.27.1"
+  }
+}
