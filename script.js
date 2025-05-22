@@ -20,9 +20,11 @@ function render(element) {
     n.setAttribute(attribute, a[attribute]);
   });
 
-  (element.children || []).forEach((child) => {
-    n.appendChild(render(child));
-  });
+  if (element.children) {
+    element.children.forEach((child) => {
+      n.appendChild(render(child));
+    });
+  }
 
   return n;
 }
